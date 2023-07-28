@@ -1,0 +1,34 @@
+### Create new Content
+POST http://localhost:8080/api/account/
+Content-Type: application/json
+
+{
+  "owner": "Amir",
+  "balance": 2000.00
+}
+
+
+### Find All Accounts
+GET http://localhost:8080/api/account/all
+
+### delete by id
+DELETE http://localhost:8080/api/account/20
+
+### get balance
+GET http://localhost:8080/api/account/balance/21
+
+### increase balance
+PUT http://localhost:8080/api/account/increase/22
+Content-Type: application/json
+
+{
+  "amount" : 2000
+}
+
+### decrease balance
+PUT http://localhost:8080/api/account/decrease/21
+Content-Type: application/json
+
+{
+  "amount" : 1995
+}
